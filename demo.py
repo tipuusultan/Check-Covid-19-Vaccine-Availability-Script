@@ -1,7 +1,6 @@
 from typing import final
 import requests
 from datetime import datetime
-from winsound import Beep
 
 
 
@@ -32,7 +31,6 @@ while True:
                 massage = "Pincode:{} , Name:{} , Slots:{} , Minimum Age:{}".format( 
                 j['pincode'] , j['name'] , j['available_capacity_dose1'] , j["min_age_limit"] )
                 print(massage)
-                Beep(1000,10000)
                 # send massage to telegram
                 send_to_group = f'https://api.telegram.org/bot1897518131:AAFfgUKGqsiZemRydjyOnDfD8KxKz9oKZmo/sendMessage?chat_id={telegram_chat_id}&text={massage}'
                 r = requests.get(send_to_group)
