@@ -14,5 +14,5 @@ group_id = '-543656097'
 while True:
     final_url = f'{base_url}?district_id={dist_id}&date={date}'
     response = requests.get(final_url)
-    json_response = response.json()
-    print(json_response)
+    print(response)
+    print(response.text)
