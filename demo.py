@@ -22,6 +22,7 @@ def fectch_data():
             tele_api_url = f'https://api.telegram.org/bot1789281332:AAGvv5r-ZSC4CM11yrYeDQkw93H7KpHTMP8/sendMessage?chat_id={group_id}&text={massage}'
             tele_response = requests.get(tele_api_url)
             print(massage)
+            print("Congras")
 
 
 while True:
