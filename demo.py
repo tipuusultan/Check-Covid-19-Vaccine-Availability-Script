@@ -15,7 +15,7 @@ group_id = '-543656097'
 base_request_header = {
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
         }
-final_url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=52&date=01-06-2021'
+final_url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=781306&date=01-06-2021'
 response = requests.get(final_url , headers=base_request_header)
 print(response)
 print(final_url)
