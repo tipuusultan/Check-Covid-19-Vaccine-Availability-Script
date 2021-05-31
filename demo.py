@@ -15,4 +15,5 @@ while True:
     final_url = f'{base_url}?district_id={dist_id}&date={date}'
     response = requests.get(final_url)
     print(response)
+    print(final_url)
     print(response.text)
