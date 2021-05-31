@@ -19,4 +19,4 @@ final_url = f'{base_url}?district_id={dist_id}&date={date}'
 response = requests.get(final_url , headers=base_request_header)
 print(response)
 print(final_url)
-print(response.text
+print(response.text)
