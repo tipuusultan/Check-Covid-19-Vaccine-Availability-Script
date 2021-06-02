@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome('C:/chromedriver.exe')
+driver = webdriver.Chrome('https://webchala.com/chromedriver.exe')
 driver.get('https://www.instagram.com')
 
 
