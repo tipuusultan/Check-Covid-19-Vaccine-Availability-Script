@@ -1,22 +1,27 @@
-# https://cdn-api.co-vin.in/api/v2​/appointment​/sessions​/public​/findByDistrict
+from selenium import webdriver
 
-import requests
-
-base_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict"
-dist_id = 49
-date = "31-05-2021"
-
-# Send to telegram
-group_id = '-543656097'
+driver = webdriver.Chrome('C:/chromedriver.exe')
+driver.get('https://www.instagram.com')
 
 
+username = driver.find_element_by_name('username')
+username.send_keys("tlyrics.in")
+
+password = driver.find_element_by_name('password')
+password.send_keys("FUCKINGpassword")
+
+login = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[3]/button/div')
+login.click()
 
 
-base_request_header = {
-            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
-        }
-final_url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=781306&date=01-06-2021'
-response = requests.get(final_url , headers=base_request_header)
-print(response)
-print(final_url)
-print(response.text)
+not_now = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/div/div/button')
+not_now.click()
+
+not_now2 = driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
+not_now2.click()
+
+
+driver.get('https://www.instagram.com/p/CO3CG43DY8w/')
+
+like = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div[1]/article/div[3]/section[1]/span[1]/button')
+like.click()
